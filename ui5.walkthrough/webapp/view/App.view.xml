@@ -1,27 +1,24 @@
 <mvc:View xmlns="sap.m"
-        xmlns:mvc="sap.ui.core.mvc" controllerName="ui5.walkthrough.controller.App">
+        xmlns:mvc="sap.ui.core.mvc" controllerName="ui5.walkthrough.controller.App" displayBlock="true">
 
         <!-- <Button text="{i18n>showHelloButtonText}" press="onClick" />
     <Input id="input" width="500px" textDirection="LTR" type="Text" description="{i18n>helloString} {/recipient/name}" value="{/recipient/name}" valueLiveUpdate="true"></Input> -->
-
-        <App>
-                <Page title="{i18n>homePageTitle}">
-                        <content>
-                                <Panel headerText="{i18n>helloPanelTitle}">
-                                        <content>
-                                                <Button text="{i18n>showHelloButtonText}" press="onClick" />
-                                                <Input  id="input"
-                                                        width="500px" 
-                                                        textDirection="LTR" 
-                                                        type="Text" 
-                                                        description="{i18n>helloString} {/recipient/name}" 
-                                                        value="{/recipient/name}" 
-                                                        valueLiveUpdate="true"></Input>
-                                        </content>
-                                </Panel>
-                        </content>
-                </Page>
-        </App>
-
+        <Shell backgroundColor="#e6f9ff">
+                <App>
+                        <Page title="{i18n>homePageTitle}">
+                                <content>
+                                        <Panel  headerText="{i18n>helloPanelTitle}"
+                                                class="sapUiResponsiveMargin"
+                                                width="auto"   >
+                                                <content>
+                                                        <Button text="{i18n>showHelloButtonText}" press="onClick" class="sapUiSmallMarginEnd"/>
+                                                        <Input id="input" width="500px" textDirection="LTR" type="Text" description="{i18n>helloString} {/recipient/name}" value="{/recipient/name}" valueLiveUpdate="true" class="sapUiSmallMarginEnd"></Input>
+                                                        <Text text="{i18n>helloString} {/recipient/name}" class="sapUiSmallMargin"></Text>
+                                                </content>
+                                        </Panel>
+                                </content>
+                        </Page>
+                </App>
+        </Shell>
 </mvc:View>
 
