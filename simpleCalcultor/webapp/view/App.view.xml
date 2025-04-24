@@ -1,0 +1,43 @@
+
+<mvc:View xmlns='sap.m'  xmlns:mvc="sap.ui.core.mvc" controllerName="path.calculator.controller.App">
+    <App>
+        <pages>
+            <Page title="Calculator">
+                <content>
+                    <FlexBox justifyContent="Center" alignItems="Center" height="50%">
+                        <VBox width="20em" alignContent="Center" alignItems="Center">
+                            <Panel width="20em" headerText="Basic Calculator">
+                                <Input id="valInput" textDirection="RTL" type="Number" width="100%" />
+                            </Panel>
+                            <Panel width="20em">
+                                <VBox alignItems="Center">
+                                    <HBox justifyContent="Center" alignItems="Center" width="100%">
+                                        <Button id="bt1" text="1" type="Emphasized" press="onPressOfButton(1)" />
+                                        <Button id="bt2" text="2" type="Emphasized" press="onPressOfButton(2)" />
+                                        <Button id="bt3" text="3" type="Emphasized" press="onPressOfButton(3)" />
+                                        <Button id="pls" text="+" type="Emphasized" press="onPressOfButton('+')" />
+                                    </HBox>
+                                    <HBox justifyContent="Center" alignItems="Center" width="100%">
+                                        <Button id="bt4" text="4" type="Emphasized" press="onPressOfButton(4)" />
+                                        <Button id="bt5" text="5" type="Emphasized" press="onPressOfButton(5)" />
+                                        <Button id="bt6" text="6" type="Emphasized" press="onPressOfButton(6)" />
+                                    </HBox>
+                                    <HBox justifyContent="Center" alignItems="Center" width="100%">
+                                        <Button id="bt7" text="7" type="Emphasized" press="onPressOfButton(7)" />
+                                        <Button id="bt8" text="8" type="Emphasized" press="onPressOfButton(8)" />
+                                        <Button id="bt9" text="9" type="Emphasized" press="onPressOfButton(9)" />
+                                    </HBox>
+                                    <HBox justifyContent="Center" alignItems="Center" width="100%">
+                                        <Button id="bck" text="Back" type="Emphasized" press="onPressOfBack()" />
+                                        <Button id="bt0" text="0" type="Emphasized" press="onPressOfButton(0)" />
+                                        <Button id="clr" text="AC" type="Emphasized" press="onPressOfButton('AC')" />
+                                    </HBox>
+                                </VBox>
+                            </Panel>
+                        </VBox>
+                    </FlexBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

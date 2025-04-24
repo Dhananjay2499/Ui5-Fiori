@@ -1,0 +1,9 @@
+sap.ui.define([
+    'sap/ui/core/mvc/XMLView',
+],function(XMLView){
+    'use strict';
+
+ XMLView.create({
+        viewName : "path.calculator.view.App"
+    }).then((oView)=>oView.placeAt('content')) ;
+})

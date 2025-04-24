@@ -1,0 +1,11 @@
+<mvc:View
+    controllerName="youtube.tutorial.controller.App"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Button text = "Click me!!!"
+            type= "Emphasized"
+            press="onPress"
+    />
+</mvc:View>
+
