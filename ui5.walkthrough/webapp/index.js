@@ -26,11 +26,11 @@ sap.ui.define([
 ], function (ComponenetContainer) {
     "use strict";
     new ComponenetContainer({
-        name:"ui5.walkthrough",
-        settings :{
-            id : "walkthrough"
+        name: "ui5.walkthrough",
+        settings: {
+            id: "walkthrough"
         },
-        async : true
+        async: true
     }).placeAt("content");
 
 })
