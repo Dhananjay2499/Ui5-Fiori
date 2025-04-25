@@ -3,8 +3,15 @@
     <Dialog id="helloDialog" title="{i18n>helloString} {/recipient/name}">
 
             <beginButton>
-                <Button text="{i18n>dialogButtonText}" press=".onCloseDialog" />
+                <Button text="{i18n>dialogButtonText}" press=".onCloseDialog" icon="sap-icon://decline"/>
             </beginButton>
+
+            <content>
+                <core:Icon src="sap-icon://choropleth-chart" 
+                           size="5rem"
+                           class="sapUiMediumMargin"     
+                                />
+            </content>
 
     </Dialog>
 
