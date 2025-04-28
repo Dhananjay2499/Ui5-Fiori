@@ -22,7 +22,8 @@
     },
     "sap.ui5": {
       "contentDensities": {
-        "compact": true
+        "compact": true,
+        "cozy": false
       },
       "dependencies": {
         "minUI5Version": "1.108.0",
