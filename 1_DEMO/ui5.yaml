@@ -1,0 +1,4 @@
+specVersion: "4.0"
+metadata:
+  name: demo_app1
+type: application
