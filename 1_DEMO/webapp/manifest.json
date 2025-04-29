@@ -39,6 +39,11 @@
             "payload": {
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "payload.json"
+            },
+
+            "staticText":{
+                "type": "sap.ui.model.json.JSONModel",
+                "uri":"text.json"
             }
         },
         "rootView": {

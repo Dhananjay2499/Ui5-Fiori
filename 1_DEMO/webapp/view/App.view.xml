@@ -1,16 +1,23 @@
-<mvc:View  xmlns="sap.m"
-            xmlns:mvc="sap.ui.core.mvc"
-            controllerName="path.demo.controller.App"
-            displayBlock="true" >
-<Shell>
-    <App>
-        <Page title="{i18n>homePageTitle}">
-            <content>
-                <mvc:XMLView viewName="path.demo.view.payloadList"/>
-            </content>
-        </Page>
-    </App>
-</Shell>            
+<mvc:View xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" controllerName="path.demo.controller.App" displayBlock="true">
+    <Shell backgroundColor="#e0ebeb">
+        <App>
+            <Page title="{i18n>homePageTitle}">
+                <content>
+                    <Panel>
+                        <content>
+                            <TextArea value="{staticText>/text1/txt_1_1}" editable="false" width="100%" textAlign="Center"  />
+                        </content>
+                    </Panel>
+                    <Panel>
+                        <content>
+                            <mvc:XMLView viewName="path.demo.view.payloadList"/>
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </App>
+    </Shell>
 
 </mvc:View>
 

@@ -1,14 +1,60 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" 
-             xmlns="sap.m" >
-    <List headerText="{i18n>listTitle}"
-          class="sapUiResponsiveMargin"
-          width="auto"
-          items="{payload>payload}"
-    >
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+
+    <!--
+  
+  The <StandardListItem> in SAPUI5 is designed for simple list entries, 
+  typically showing one title and one description—not full tabular data. 
+  Since you want to show multiple fields like first name, last name, occupation, etc., 
+  <StandardListItem> is not ideal.
+  
+   <List headerText="{i18n>listTitle}" class="sapUiResponsiveMargin" width="auto" items="{payload>/items}">
         <items>
             <StandardListItem title="{payload>first_name}"/>
         </items>
-          
-    </List>
+    </List> -->
+
+    <Table items="{payload>/items}" inset="false">
+        <columns>
+            <Column>
+                <Text text="First Name"/>
+            </Column>
+            <Column>
+                <Text text="Last Name"/>
+            </Column>
+            <Column>
+                <Text text="Occupation"/>
+            </Column>
+            <Column>
+                <Text text="Salary"/>
+            </Column>
+            <Column>
+                <Text text="Currency"/>
+            </Column>
+            <Column>
+                <Text text="Company"/>
+            </Column>
+            <Column>
+                <Text text="Country"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{payload>first_name}" />
+                    <Text text="{payload>last_name}" />
+                    <Text text="{payload>occupation}" />
+                    <Text text="{payload>salary}" />
+                    <Text text="{payload>currency}" />
+                    <Text text="{payload>company}" />
+                    <Text text="{payload>country}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+
+
+
 
 </mvc:View>
