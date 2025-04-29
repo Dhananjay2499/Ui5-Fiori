@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+             xmlns="sap.m" >
+    <List headerText="{i18n>listTitle}"
+          class="sapUiResponsiveMargin"
+          width="auto"
+          items="{payload>payload}"
+    >
+        <items>
+            <StandardListItem title="{payload>first_name}"/>
+        </items>
+          
+    </List>
+
+</mvc:View>

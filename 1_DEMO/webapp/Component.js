@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "spa/ui/model/json/JSONModel"    
+    "sap/ui/model/json/JSONModel"    
 ], function (UIComponent,JSONModel) {
     "use strict";
 
@@ -12,14 +12,6 @@ sap.ui.define([
 
         init() {
             UIComponent.prototype.init.apply(this, arguments);
-
-            const oData = {
-                recipient : {
-                    name : 'World'
-                }
-            }
-            const oModel = new JSONModel(oData);
-            this.setModel(oModel);
 
         }
 

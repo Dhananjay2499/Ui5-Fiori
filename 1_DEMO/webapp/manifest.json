@@ -1,55 +1,50 @@
 {
     "_version": "1.19.0",
-
     "sap.app": {
         "id": "path.demo",
         "i18n": "i18n/i18n.properties",
-        "title":"Demo 1",
+        "title": "Demo 1",
         "type": "application",
         "applicationVersion": {
             "version": "1.0.0"
         }
     },
-
-
     "sap.ui": {
         "technology": "UI5",
-        "deviceTypes":{
+        "deviceTypes": {
             "desktop": true,
             "tablet": true,
             "phone": true
         }
     },
-
-    "sap.ui5":{
+    "sap.ui5": {
         "dependencies": {
-        "minUI5Version":"1.108.0",
-        "libs": {
-            "sap.ui.core":{},
-            "sap.m":{}
+            "minUI5Version": "1.108.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
             }
         },
-
         "contentDensities": {
             "compact": true,
             "cozy": true
         },
-
         "models": {
-            "i18n":{
+            "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "path.demo.i18n.i18n"
                 }
             },
-
-            "paylod":{
+            "payload": {
                 "type": "sap.ui.model.json.JSONModel",
-                "uri":"paylod.json"
+                "uri": "payload.json"
             }
-
+        },
+        "rootView": {
+            "viewName": "path.demo.view.App",
+            "type": "XML",
+            "id": "app"
         }
-
     }
-    
 }
