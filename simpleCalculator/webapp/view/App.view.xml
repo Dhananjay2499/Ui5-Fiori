@@ -5,11 +5,9 @@
             <pages>
                 <Page title="Calculator">
                     <content>
-                        <FlexBox justifyContent="Center" alignItems="Center" height="50%">
+                        <FlexBox justifyContent="Center" alignItems="Center" height="auto">
                             <VBox width="20em" alignContent="Center" alignItems="Center">
-                                <Panel width="20em" headerText="Basic Calculator">
-                                    <!-- <Input id="valInput" textDirection="RTL" type="Number" width="100%" liveChange="true" /> -->
-                                    <!-- <Text id="valInput" text="" textAlign="End"></Text> -->
+                                <Panel width="20em" height="auto" headerText="Basic Calculator">
                                     <TextArea id="valInput" placeholder="Input" rows="4" cols="50" editable="false"
                                     liveChange="true" textDirection="RTL" 
                                     />
