@@ -15,7 +15,14 @@
         </items>
     </List> -->
 
-    <Table items="{payload>/items}" inset="false">
+ 
+                <Text text="Occupation"/>
+            </Column>
+            <Column>
+                <Text text="Salary"/>
+            </Column>
+            <Column>
+                <Text text="Cur   <Table items="{payload>/items}" inset="false">
         <columns>
             <Column>
                 <Text text="First Name"/>
@@ -23,14 +30,7 @@
             <Column>
                 <Text text="Last Name"/>
             </Column>
-            <Column>
-                <Text text="Occupation"/>
-            </Column>
-            <Column>
-                <Text text="Salary"/>
-            </Column>
-            <Column>
-                <Text text="Currency"/>
+            <Column>rency"/>
             </Column>
             <Column>
                 <Text text="Company"/>
