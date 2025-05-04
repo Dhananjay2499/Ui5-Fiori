@@ -5,3 +5,8 @@ Documntation link : https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2
 
 
 while adding a json file to manifest.json, make sure to keep binding in sap.ui5>models>XXX.json
+
+
+To add node_mododules to work with Remote OData Service run : npm i -D ui5-middleware-simpleproxy
+
+
