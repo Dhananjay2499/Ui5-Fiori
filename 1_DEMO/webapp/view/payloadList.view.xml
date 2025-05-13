@@ -15,6 +15,48 @@
         </items>
     </List> -->
 
+    <Table id="employeeTable" items="{payload>/items}" inset="false" headerText="Employee Details" mode="None">
 
+        <columns>
+            <Column>
+                <Text text="First Name"/>
+            </Column>
+            <Column>
+                <Text text="Last Name"/>
+            </Column>
+            <Column>
+                <Text text="Occupation"/>
+            </Column>
+            <Column>
+                <Text text="Salary"/>
+            </Column>
+            <Column>
+                <Text text="Currency"/>
+            </Column>
+            <Column>
+                <Text text="Company"/>
+            </Column>
+            <Column>
+                <Text text="Country"/>
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{payload>first_name}"/>
+                    <Text text="{payload>last_name}"/>
+                    <Text text="{payload>occupation}"/>
+                    <Text text="{payload>salary}"/>
+                    <Text text="{payload>currency}"/>
+                    <Text text="{payload>company}"/>
+                    <Text text="{payload>country}"/>
+
+                </cells>
+            </ColumnListItem>
+        </items>
+
+
+    </Table>
 
 </mvc:View>
